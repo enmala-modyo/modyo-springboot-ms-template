@@ -1,6 +1,6 @@
 package {{ cookiecutter.group_id }};
 
-import com.modyo.example.archunit.HexagonalArchitecture;
+import {{ cookiecutter.group_id }}.archunit.HexagonalArchitecture;
 import com.tngtech.archunit.core.importer.ClassFileImporter;
 import org.junit.jupiter.api.Test;
 

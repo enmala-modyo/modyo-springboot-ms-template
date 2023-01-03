@@ -1,4 +1,4 @@
-package com.modyo.example.domain.model;
+package {{ cookiecutter.group_id }}.domain.model;
 
 import lombok.Data;
 

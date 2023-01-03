@@ -1,7 +1,7 @@
-package com.modyo.example.application.service;
+package {{ cookiecutter.group_id }}.application.service;
 
-import com.modyo.example.application.port.in.InputPort;
-import com.modyo.example.application.port.out.OutputPort;
+import {{ cookiecutter.group_id }}.application.port.in.InputPort;
+import {{ cookiecutter.group_id }}.application.port.out.OutputPort;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import lombok.RequiredArgsConstructor;
