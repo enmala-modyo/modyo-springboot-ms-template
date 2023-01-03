@@ -1,6 +1,6 @@
 {
-  "project_name": "prueba",
-  "group_id": "com.modyo.prueba",
+  "project_name": "example",
+  "group_id": "com.modyo.example",
   "project_short_description": "Example Microservice.",
   "year": "2023",
   "version": "1.0.0",
