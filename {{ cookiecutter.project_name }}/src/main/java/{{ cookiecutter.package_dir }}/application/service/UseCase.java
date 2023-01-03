@@ -5,8 +5,10 @@ import {{ cookiecutter.group_id }}.application.port.out.OutputPort;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
+@Service
 public class UseCase implements InputPort {
 
   private final OutputPort port;

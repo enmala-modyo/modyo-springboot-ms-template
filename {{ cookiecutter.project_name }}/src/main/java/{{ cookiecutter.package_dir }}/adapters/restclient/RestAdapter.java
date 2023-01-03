@@ -1,7 +1,9 @@
 package {{ cookiecutter.group_id }}.adapters.restclient;
 
 import {{ cookiecutter.group_id }}.application.port.out.OutputPort;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RestAdapter implements OutputPort {
 
   @Override
