@@ -1,6 +1,6 @@
 # Modyo Springboot Microservice Template
 
-This template allows you to create a Microservice project with Spring Boot using hexagonal architecture.
+This template allows you to create a Microservice project with Spring Boot using the hexagonal architecture.
 
 ## Setup:
 
