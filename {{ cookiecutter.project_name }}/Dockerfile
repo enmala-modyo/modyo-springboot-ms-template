@@ -1,4 +1,9 @@
 FROM amazoncorretto:11.0.17-al2
+
+RUN yum update -y --security && \
+   yum clean all && \
+   rm -rf /var/cache/yum
+   
 ENV STAGE_NAME certification
 WORKDIR /usr/app
 COPY build/libs/{{ cookiecutter.project_name }}-{{ cookiecutter.version }}.jar .
