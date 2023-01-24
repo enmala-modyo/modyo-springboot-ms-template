@@ -1,7 +1,4 @@
 spring:
-  profiles:
-    include:
-      - datasources-development
   jpa:
     properties:
       hibernate:

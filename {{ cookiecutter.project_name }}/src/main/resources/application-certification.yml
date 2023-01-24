@@ -1,7 +1,4 @@
 spring:
-  profiles:
-    include:
-      - datasources-certification
   jpa:
     properties:
       hibernate:

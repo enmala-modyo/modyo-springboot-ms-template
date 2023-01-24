@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.13.RELEASE'
+    id 'org.springframework.boot' version '2.7.8'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
     id 'jacoco'
     id 'org.sonarqube' version '3.5.0.2730'
@@ -11,7 +11,7 @@ sonarqube {
         property "sonar.projectKey", "modyo_{{ cookiecutter.project_name }}"
         property "sonar.organization", "modyo"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.exclusions", "**/*Application*, **/*Configuration*"
+        property "sonar.exclusions", "**/*Application*, **/*Config*"
         property "sonar.externalIssuesReportPaths", "trivy-report.json"
     }
 }
@@ -52,7 +52,7 @@ compileTestJava {
 
 dependencyManagement {
     imports {
-        mavenBom 'org.springframework.boot:spring-boot-dependencies:2.2.13.RELEASE'
+        mavenBom 'org.springframework.boot:spring-boot-dependencies:2.7.8'
     }
 }
 
@@ -71,13 +71,14 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
     // Modyo Microservices Commons
-    implementation 'com.modyo.ms.commons:core:2.9.22-RELEASE'
-    implementation 'com.modyo.ms.commons:http:2.9.22-RELEASE'
-    implementation 'com.modyo.ms.commons:aws-api-gw:2.9.22-RELEASE'
+    implementation 'com.modyo.ms.commons:core:2.10.1-RELEASE'
+    implementation 'com.modyo.ms.commons:http:2.10.1-RELEASE'
+    implementation 'com.modyo.ms.commons:audit:2.10.1-RELEASE'
+    implementation 'com.modyo.ms.commons:aws-api-gw:2.10.1-RELEASE'
 
     // Swagger
-    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
-    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.swagger:swagger-annotations:1.6.9'
 
     // Lombok
     implementation 'org.projectlombok:lombok'

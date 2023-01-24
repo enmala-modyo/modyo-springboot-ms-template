@@ -28,6 +28,7 @@ build/
 
 # VS Code
 .vscode/
+bin/
 
 # Compiled class file
 *.class
