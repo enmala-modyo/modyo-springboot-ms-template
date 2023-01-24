@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
 @ComponentScan({"com.modyo.ms.commons", "{{ cookiecutter.group_id }}"})
-@EnlableWebMvc
+@EnableWebMvc
 public class Application {
 
   public static void main(String[] args) {
