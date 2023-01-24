@@ -10,9 +10,12 @@ This template allows you to create a Modyo Microservice project with Spring Boot
 3. Go to the created repository and complete the setup **&darr;**.
 
 ### Complete setup
-1. In the new repository, <a href="../../edit/master/cookiecutter.json">complete the project setup</a> editing the `cookiecutter.json` file. 
+1. In the new repository verify if workflows are allowed to write. Please go to Project Settings - Actions - General and in Workflow permissions give "Read and write permissions" to workflows.
+1. Go back to the repository and <a href="../../edit/master/cookiecutter.json">complete the project setup</a> editing the `cookiecutter.json` file. 
 1. Hit <kbd>cmd</kbd> + <kbd>S</kbd> and then <kbd>Enter</kbd> to perform a commit (the commit message doesn't matter).
 1. Wait <a href="../../actions">Setup Repository Action</a> to complete.
+
+:warning: After the action runs you can change the workflow permissions again, if you like.
 
 That's it, your repository now contains a basic Spring Boot Microservice project.
 
