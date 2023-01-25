@@ -20,6 +20,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    mavenLocal()
     mavenCentral()
     maven {
         name = 'GitHubPackages'
