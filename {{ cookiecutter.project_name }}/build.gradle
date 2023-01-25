@@ -74,7 +74,6 @@ dependencies {
     // Modyo Microservices Commons
     implementation 'com.modyo.ms.commons:core:2.10.2-RELEASE'
     implementation 'com.modyo.ms.commons:http:2.10.2-RELEASE'
-    implementation 'com.modyo.ms.commons:audit:2.10.2-RELEASE'
     implementation 'com.modyo.ms.commons:aws-api-gw:2.10.2-RELEASE'
 
     // Swagger
