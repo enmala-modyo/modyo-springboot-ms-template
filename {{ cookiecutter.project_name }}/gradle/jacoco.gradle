@@ -4,7 +4,7 @@ jacoco {
     toolVersion = "0.8.5"
 }
 
-ext['skip'] = ['**/*MapperImpl*', '**/**Config*', '**/**Application.class']
+ext['skip'] = ['**/*MapperImpl*', '**/**Config*']
 
 jacocoTestCoverageVerification {
     violationRules {
