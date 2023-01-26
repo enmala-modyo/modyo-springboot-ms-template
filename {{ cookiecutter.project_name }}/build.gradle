@@ -86,6 +86,9 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.24'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 
+    // Security Updates
+    implementation 'org.yaml:snakeyaml:1.33'
+
     // Testing
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation 'com.tngtech.archunit:archunit:0.23.1'
