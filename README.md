@@ -15,6 +15,8 @@ This template allows you to create a Modyo Microservice project with Spring Boot
 1. Hit <kbd>cmd</kbd> + <kbd>S</kbd> and then <kbd>Enter</kbd> to perform a commit (the commit message doesn't matter).
 1. Wait <a href="../../actions">Setup Repository Action</a> to complete.
 
+:point_right: The newly created project depends on Modyo Commons Library so you must define two actions secrets (CI_GITHUB_TOKEN and CI_GITHUB_USERNAME) to allow Github actions to download it and build your project. Please set this up before your first PR.
+
 :warning: After the action runs you can change the workflow permissions again, if you like.
 
 That's it, your repository now contains a basic Spring Boot Microservice project.
