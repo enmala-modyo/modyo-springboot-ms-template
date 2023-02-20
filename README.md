@@ -17,6 +17,8 @@ This template allows you to create a Modyo Microservice project with Spring Boot
 
 :point_right: The newly created project depends on Modyo Commons Library so you must define two actions secrets (CI_GITHUB_TOKEN and CI_GITHUB_USERNAME) to allow Github actions to download it and build your project. Please set this up before your first PR.
 
+:point_right: In order to enable SonarCloud analisys you must also define SONAR_TOKEN as actions secret.
+
 :warning: After the action runs you can change the workflow permissions again, if you like.
 
 That's it, your repository now contains a basic Spring Boot Microservice project.
