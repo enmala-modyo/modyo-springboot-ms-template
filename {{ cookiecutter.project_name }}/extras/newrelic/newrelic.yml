@@ -398,9 +398,9 @@ common: &default_settings
 # NOTE if your application has other named environments, you should
 # provide configuration settings for these environments here.
 
-development:
+staging:
   <<: *default_settings
-  app_name: {{ cookiecutter.project_name }} (Development)
+  app_name: {{ cookiecutter.project_name }} (Staging)
 
 certification:
   <<: *default_settings
