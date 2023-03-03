@@ -2,6 +2,7 @@
   "project_name": "example",
   "group_id": "com.modyo.example",
   "project_short_description": "Example Microservice.",
+  "context_path": "/",
   "year": "2023",
   "version": "1.0.0",
   "package_dir": "{{cookiecutter.group_id|replace('.', '/')}}"

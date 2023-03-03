@@ -1,5 +1,7 @@
 server:
   port: ${SERVICE_PORT:8080}
+  servlet:
+    context-path: {{ cookiecutter.context_path }}
 spring:
   profiles:
     active: ${STAGE_NAME:certification}
@@ -11,4 +13,3 @@ spring:
       production: datasources-production
   application:
     name: {{ cookiecutter.project_name }}
-    
