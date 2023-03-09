@@ -126,6 +126,7 @@ pitest {
     mutators = ['DEFAULTS','-VOID_METHOD_CALLS']
     testSourceSets = [sourceSets.test, sourceSets.integration]
     excludedClasses = ['*Application*','*Config*', '*MapperImpl*']
+    mutationThreshold = 75
 }
 
 // slug size reduction for Heroku deployment
