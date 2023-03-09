@@ -127,6 +127,8 @@ pitest {
     testSourceSets = [sourceSets.test, sourceSets.integration]
     excludedClasses = ['*Application*','*Config*', '*MapperImpl*']
     mutationThreshold = 75
+    historyInputLocation = 'build/.pitHistory'
+    historyOutputLocation = 'build/.pitHistory'
 }
 
 // slug size reduction for Heroku deployment
