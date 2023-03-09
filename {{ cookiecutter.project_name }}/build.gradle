@@ -125,6 +125,7 @@ pitest {
     junit5PluginVersion = '1.1.2'
     mutators = ['DEFAULTS','-VOID_METHOD_CALLS']
     testSourceSets = [sourceSets.test, sourceSets.integration]
+    excludedClasses = ['*Application*','*Config*', '*MapperImpl*']
 }
 
 // slug size reduction for Heroku deployment
