@@ -5,6 +5,7 @@ plugins {
     id 'org.sonarqube' version '4.0.0.2929'
     id 'org.cyclonedx.bom' version '1.7.2'
     id "name.remal.integration-tests" version "3.0.0"
+    id 'info.solidsoft.pitest' version '1.9.11'
 }
 
 sonarqube {
@@ -117,6 +118,13 @@ tasks.withType(Test).configureEach {
 
 testSourceSets {
     integration
+}
+
+pitest {
+    //adds dependency to org.pitest:pitest-junit5-plugin and sets "testPlugin" to "junit5"
+    junit5PluginVersion = '1.1.2'
+    mutators = ['DEFAULTS','-VOID_METHOD_CALLS']
+    testSourceSets = [sourceSets.test, sourceSets.integration]
 }
 
 // slug size reduction for Heroku deployment
