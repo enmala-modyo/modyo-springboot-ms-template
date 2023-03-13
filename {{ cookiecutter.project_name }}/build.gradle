@@ -123,8 +123,9 @@ testSourceSets {
 pitest {
     //adds dependency to org.pitest:pitest-junit5-plugin and sets "testPlugin" to "junit5"
     junit5PluginVersion = '1.1.2'
-    mutators = ['DEFAULTS','-VOID_METHOD_CALLS']
+    mutators = ['DEFAULTS']
     testSourceSets = [sourceSets.test, sourceSets.integration]
+    avoidCallsTo = ['com.modyo.ms.commons.audit']
     excludedClasses = ['*Application*','*Config*', '*MapperImpl*']
     mutationThreshold = 75
     historyInputLocation = 'build/.pitHistory'
