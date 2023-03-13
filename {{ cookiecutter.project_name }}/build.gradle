@@ -13,7 +13,7 @@ sonarqube {
         property "sonar.projectKey", "modyo_{{ cookiecutter.project_name }}"
         property "sonar.organization", "modyo"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.coverage.exclusions", "**/**Application*,**/*Config*,**/*MapperImpl*"
+        property "sonar.coverage.exclusions", "**/**Application*,**/*Config*,**/*Mapper*"
         property "sonar.externalIssuesReportPaths", "trivy-report.json"
     }
 }
@@ -126,7 +126,7 @@ pitest {
     mutators = ['DEFAULTS']
     testSourceSets = [sourceSets.test, sourceSets.integration]
     avoidCallsTo = ['com.modyo.ms.commons.audit']
-    excludedClasses = ['*Application*','*Config*', '*MapperImpl*']
+    excludedClasses = ['*Application*','*Config*', '*Mapper*']
     mutationThreshold = 75
     historyInputLocation = 'build/.pitHistory'
     historyOutputLocation = 'build/.pitHistory'
